@@ -14,7 +14,7 @@ class Appointment
       doctor.patients << patient
     end
   
-   if patient.doctor.include?(doctor) != true 
+   if patient.doctors.include?(doctor) != true 
       patient.doctors << doctor 
     end
       
