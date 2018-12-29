@@ -9,6 +9,13 @@ class Patient
     @@all << self
   end
   
+  def self.doctors
+    @doctors
+  end
+  def self.appointments
+    @appointments
+  end
+  
   def new_appointment (doctor, appointment)
     Appointment.new(self, doctor, appointment)
   end
