@@ -7,8 +7,11 @@ class Appointment
     @patient = patient
     @date =  date
     @@all << self 
-    doctor.patients << patient
+    doctor.appointments << self
+    patient.appointments << self
     
+    if doctor.patients.include?(patient) != true 
+      
   end
   
   def Appointment.all 
