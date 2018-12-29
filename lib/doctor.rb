@@ -19,4 +19,8 @@ class Doctor
   def self.patients
     @patients
   end
+  
+  def self.appointments
+    @appointments
+  end
 end
