@@ -12,3 +12,4 @@ class Appointment
   def Appointment.all 
     @@all 
   end
+end 
