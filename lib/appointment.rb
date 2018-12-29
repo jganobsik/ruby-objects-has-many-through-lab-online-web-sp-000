@@ -7,6 +7,8 @@ class Appointment
     @patient = patient
     @date =  date
     @@all << self 
+    doctor.patients << patient
+    
   end
   
   def Appointment.all 
