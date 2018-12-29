@@ -11,6 +11,12 @@ class Appointment
     patient.appointments << self
     
     if doctor.patients.include?(patient) != true 
+      doctor.patients << patient
+    end
+  
+   if patient.doctor.include?(doctor) != true 
+      patient.doctors << doctor 
+    end
       
   end
   
